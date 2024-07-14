@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #282828;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  margin-top: -100px; 
+  flex-direction: column;
+  
+
+}
+
+.container i {
+  position: absolute;
+  inset: 0;
+  border: none;
+  transition: 0.5s;
+  animation: animate 5s linear infinite;
+}
+
+.container i:nth-child(1) {
+  border-radius: 8% 92% 7% 93% / 91% 10% 90% 9%;
+  animation: animate 10s linear infinite;
+}
+
+.container i:nth-child(2) {
+  border-radius: 86% 14% 86% 14% / 14% 80% 20% 86%;
+  animation: animate 10s linear infinite;
+}
+
+.container i:nth-child(3) {
+  border-radius: 51% 49% 58% 42% / 46% 47% 53% 54%;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.container:hover i {
+  border: 10px solid var(--clr);
+  filter: drop-shadow(10px 10px 20px var(--clr));
+}
+
+.container .form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100%;
+  gap: 20px;
+  top: 50%; /* Position the form at the center */
+  transform: translateY(-50%);
+}
+
+.container .form h3 
+{
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.container .form .box 
+{
+  position: relative;
+  width: 100%;
+}
+
+.container .form .box input 
+{
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  box-shadow: none;
+  outline: none;
+}
+
+.container .form .box input[type="submit"] 
+{
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #002929, #290000);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.container .form .box input[type="submit"]:hover 
+{
+  background: linear-gradient(200deg, #002929, #290000);
+}
+
+.container .form .link 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.container .form .link a 
+{
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.container .form .link a:hover {
+  color: #afc2cb;
+}
+
+
+
+.product 
+{
+  margin: 10px;
+  text-align: center;
+}
+
+.product img
+{
+  width: 150px;
+  height: 150px;
+}
+
+.container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.name-button
+ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #282828;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.name-button:hover 
+{
+  background-color: blue;
+  color: #fff;
+}
